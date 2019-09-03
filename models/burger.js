@@ -19,4 +19,4 @@ var burger ={
   },
 }
 // Export the database functions for the controller b_controlelr
-module.exports = burgers;
+module.exports = burger;

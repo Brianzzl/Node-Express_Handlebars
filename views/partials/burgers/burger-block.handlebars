@@ -1,0 +1,17 @@
+{{!-- <li>
+	{{burger}}
+	<button class="change-devour" data-id="{{id}}" data-devoured="{{devoured}}">
+		Eeeeeeat it!
+				{{#if sleep}}SLEEP TIME!{{else}}WAKE UP!{{/if}}
+	</button>
+</li> --}}
+
+<li>
+	{{name}}
+
+{{#if devour}}
+
+{{else}}
+<button class="change-devour" data-id="{{id}}" data-devoured="{{devoured}}">Devour!</button>
+{{/if}}
+</li>

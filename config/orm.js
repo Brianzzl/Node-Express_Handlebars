@@ -36,9 +36,11 @@ var orm = {
   },
 
   updateOne: function(table, objColvalue, condition, cb) {
-    var queryStr = "UPDATE " + table + " SET " + objColvalue + " WHERE " + condition;
 
- //   console.log(queryString);
+    // var queryString = "UPDATE " + table + " SET " + objToSql(objColvalue) + " WHERE " + condition;
+
+    var queryString = "UPDATE " + table + " SET " + "devoured = true" + " WHERE " + condition;
+   console.log(queryString);
     connection.query(queryString, function(err, res) {
       if (err) {
         throw err;
