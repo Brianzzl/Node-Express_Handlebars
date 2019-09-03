@@ -1,11 +1,17 @@
-<h1>Burgers</h1>
 
 
 <div class='container'>
 
+
+<div class="imggg"></div>
+
+<p><h1>Burgers</h1></p>
+
   <div class="row">
-    <p>burger available</p>
-    <div class="col-8">
+
+
+    <div class="col-6">
+          <p>burger available</p>
             <ul>
         {{#each burgers}}
           {{#unless devoured}}
@@ -16,11 +22,12 @@
     </div>
 
 
-  </div>
 
-<p>burger eaten</p>
-    <div class="row"></div>
-      <div class="col-4">
+
+
+
+    <div class="col-6">
+      <p>burger eaten</p>
       <ul>
         {{#each burgers}}
           {{#if devoured}}
@@ -29,6 +36,7 @@
         {{/each}}
       </ul>
     </div>
+
   </div>
 </div>
 
